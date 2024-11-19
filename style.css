@@ -1,0 +1,133 @@
+/* Fonts and Colors */
+:root {
+    --primary-color: #8B0000; /* Deep Red */
+    --secondary-color: #006400; /* Dark Green */
+    --background-color: #fffaf0; /* Light Ivory */
+    --text-color: #333; /* Dark Gray */
+    --accent-color: #ffd700; /* Gold */
+}
+
+/* Global Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header .logo {
+    max-width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header .title h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+.header .title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin: 5px 0;
+    color: var(--accent-color);
+}
+
+.header p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Menu Section */
+.menu {
+    padding: 30px;
+}
+
+.menu-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+.category-title {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.category ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.category ul li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+}
+
+.category ul li::before {
+    content: '•';
+    color: var(--accent-color);
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Special Section */
+.special {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.special h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: var(--text-color);
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
